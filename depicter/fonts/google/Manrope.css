@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/wp-content/uploads/depicter/fonts/google/Manrope/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk6jFN_C-bw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/wp-content/uploads/depicter/fonts/google/Manrope/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_C-bw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(/wp-content/uploads/depicter/fonts/google/Manrope/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E9_C-bw.ttf) format('truetype');
+}
