@@ -2,7 +2,12 @@
   "redirects": [
     {
       "source": "/مقالات-خدمات-خدمات-طلابية/:path*",
-      "destination": "/مقالات-خدمات-طلابية/:path*",
+      "destination": "/مقالات-خدمات-خدمات-طلابية/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/2025/12/28/:path*",
+      "destination": "/07/20/الإطار-النظري/",
       "permanent": true
     }
   ]
