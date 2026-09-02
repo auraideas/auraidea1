@@ -2,8 +2,8 @@
   "redirects": [
     {
       "source": "/مقالات-خدمات-خدمات-طلابية/:path*",
-      "destination": "/مقالات-خدمات-خدمات-طلابية/:path*",
-      "permanent": true
+      "destination": "/مقالات-خدمات-طلابية/:path*",
+      "permanent": false
     },
     {
       "source": "/2025/12/28/:path*",
