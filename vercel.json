@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/مقالات-خدمات-خدمات-طلابية/:path*",
+      "destination": "/مقالات-خدمات-طلابية/:path*",
+      "permanent": true
+    }
+  ]
+}
