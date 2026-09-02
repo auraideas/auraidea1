@@ -1,8 +1,5 @@
-# START YOAST BLOCK
-# ---------------------------
 User-agent: *
-Disallow:
-
-Sitemap: https://aura-ideas.com/sitemap_index.xml
-# ---------------------------
-# END YOAST BLOCK
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Sitemap: https://www.auraideasuae.com/sitemap.xml
