@@ -3,3 +3,4 @@ Allow: /
 Disallow: /wp-admin/
 Disallow: /wp-login.php
 Sitemap: https://www.auraideasuae.com/sitemap.xml
+Sitemap: https://www.auraideasuae.com/sitemap_index.xml
