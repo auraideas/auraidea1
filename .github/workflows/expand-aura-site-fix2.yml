@@ -1,0 +1,62 @@
+name: Expand Aura site fix 2
+
+
+
+on:
+
+  workflow_dispatch:
+  
+
+
+permissions:
+
+  contents: write
+  
+
+
+jobs:
+
+  expand:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+      - name: Checkout
+      
+        uses: actions/checkout@v4
+        
+      - name: Expand complete HTML bundle
+      
+        run: |
+        
+          unzip -oq aura-site-fix2.zip -d .
+          
+          rm -f aura-site-fix2.zip
+          
+          rm -f .github/workflows/expand-aura-site-fix2.yml
+          
+          git config user.name "github-actions[bot]"
+          
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          git add -A
+          
+          git commit -m "Apply complete HTML fixes and static blog archive" || echo "No changes to commit"
+          
+          git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
