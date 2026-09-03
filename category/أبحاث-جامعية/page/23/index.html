@@ -537,48 +537,6 @@ gtag("config", "GT-KFHL9JDH");
 <link rel="manifest" href="/site.webmanifest"><style id="aura-final-ui-fix">html,body{max-width:100%;overflow-x:hidden}img,video,iframe{max-width:100%}.hfeed.site,.elementor,.elementor-page{max-width:100%;overflow-x:clip}.aura-hero{width:100%;max-width:100%}@media(max-width:600px){.elementor-container,.e-con-inner{max-width:100%!important;width:100%!important}.elementor-widget-container{max-width:100%;overflow-x:clip}}</style></head>
 
 <body class="rtl archive paged category category-1 wp-embed-responsive paged-23 category-paged-23 wp-theme-twentytwentyfour rttpg rttpg-7.9.3 radius-frontend rttpg-body-wrap rttpg-flaticon jps-theme-twentytwentyfour is-block-theme ehf-header ehf-footer ehf-template-twentytwentyfour ehf-stylesheet-twentytwentyfour manage-default esm-default elementor-default elementor-kit-741">
-    <style id="aura-page-loader-style">
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&display=swap');
-      .aura-page-loader{position:fixed;inset:0;z-index:2147483000;display:grid;place-items:center;overflow:hidden;background:linear-gradient(135deg,#193f59 0%,#2e7097 62%,#61ce70 145%);opacity:1;visibility:visible;pointer-events:auto;transition:opacity .45s ease,visibility .45s ease}
-      .aura-page-loader.is-hidden{opacity:0;visibility:hidden;pointer-events:none}
-      .aura-page-loader:before,.aura-page-loader:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.16);border-radius:50%;pointer-events:none}
-      .aura-page-loader:before{width:430px;height:430px;right:-180px;top:-235px}
-      .aura-page-loader:after{width:300px;height:300px;left:-145px;bottom:-190px}
-      .aura-page-loader-box{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:min(88vw,420px);padding:25px 18px;text-align:center}
-      .aura-page-loader-logo{display:block;width:clamp(76px,13vw,116px);height:clamp(76px,13vw,116px);object-fit:contain;margin:0 auto 18px;border-radius:22px;background:#fff;box-shadow:0 13px 35px rgba(0,0,0,.2);animation:auraLoaderLogo 1.8s ease-in-out infinite}
-      .aura-page-loader-title{margin:0;color:#fff!important;font-family:'Noto Kufi Arabic',Tahoma,Arial,sans-serif;font-size:clamp(24px,4.5vw,43px);font-weight:700;line-height:1.65;text-shadow:0 3px 14px rgba(0,0,0,.2)}
-      .aura-page-loader-line{width:75px;height:4px;margin:14px auto 19px;border-radius:10px;background:#61ce70;box-shadow:0 0 18px rgba(97,206,112,.7);animation:auraLoaderLine 1.25s ease-in-out infinite}
-      .aura-page-loader-subtitle{margin:0;color:rgba(255,255,255,.88);font-family:'Noto Kufi Arabic',Tahoma,Arial,sans-serif;font-size:clamp(10px,1.5vw,13px);font-weight:400;line-height:1.9}
-      .aura-page-loader-dots{display:flex;gap:6px;margin-top:22px;direction:ltr}.aura-page-loader-dots i{display:block;width:7px;height:7px;border-radius:50%;background:#fff;opacity:.35;animation:auraLoaderDot 1.15s ease-in-out infinite}.aura-page-loader-dots i:nth-child(2){animation-delay:.16s}.aura-page-loader-dots i:nth-child(3){animation-delay:.32s}
-      @keyframes auraLoaderLogo{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-6px) scale(1.025)}}@keyframes auraLoaderLine{0%,100%{transform:scaleX(.65);opacity:.7}50%{transform:scaleX(1.05);opacity:1}}@keyframes auraLoaderDot{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-4px)}}
-      @media(max-width:520px){.aura-page-loader-logo{margin-bottom:13px;border-radius:18px}.aura-page-loader-line{margin:9px auto 13px}.aura-page-loader-subtitle{font-size:10px}.aura-page-loader-dots{margin-top:17px}}
-      @media(prefers-reduced-motion:reduce){.aura-page-loader,.aura-page-loader-logo,.aura-page-loader-line,.aura-page-loader-dots i{animation:none;transition:none}}
-    </style>
-    <div class="aura-page-loader" id="aura-page-loader" role="status" aria-live="polite" aria-label="جاري تحميل أورا للأفكار">
-      <div class="aura-page-loader-box">
-        <img class="aura-page-loader-logo" src="/logo.png" alt="أورا للأفكار" onerror="this.style.display='none'">
-        <h1 class="aura-page-loader-title">أورا للأفكار</h1>
-        <span class="aura-page-loader-line" aria-hidden="true"></span>
-        <p class="aura-page-loader-subtitle">جاري تجهيز صفحتك الأكاديمية</p>
-        <span class="aura-page-loader-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-      </div>
-    </div>
-    <script>
-    (function(){
-      var loader=document.getElementById('aura-page-loader');
-      if(!loader)return;
-      var hidden=false;
-      function hide(){if(hidden)return;hidden=true;loader.classList.add('is-hidden');window.setTimeout(function(){if(loader&&loader.parentNode)loader.parentNode.removeChild(loader)},520)}
-      function isInternal(link){
-        if(!link||!link.href)return false;
-        var raw=link.getAttribute('href')||'';
-        if(!raw||raw.charAt(0)==='#'||raw.indexOf('javascript:')===0||link.hasAttribute('download')||link.target==='_blank')return false;
-        try{var u=new URL(link.href,window.location.href);return u.origin===window.location.origin&&(u.pathname!==window.location.pathname||u.search!==window.location.search)}catch(e){return false}
-      }
-      if(document.readyState==='complete'){window.setTimeout(hide,280)}else{window.addEventListener('load',function(){window.setTimeout(hide,280)},{once:true});window.setTimeout(hide,7000)}
-      document.addEventListener('click',function(e){var link=e.target.closest?e.target.closest('a'):null;if(isInternal(link)){loader=document.getElementById('aura-page-loader');if(loader){hidden=false;loader.classList.remove('is-hidden')}}},true);
-    })();
-    </script>
     <script id='jetpack-search-theme-token-sampler'>(function(){try{var c=getComputedStyle(document.body),r=document.documentElement,ink=c.color,bg=c.backgroundColor;if(ink){r.style.setProperty('--jp-search-page-ink',ink);}if(bg&&bg!==ink&&bg!=='rgba(0, 0, 0, 0)'&&bg!=='transparent'){r.style.setProperty('--jp-search-page-surface',bg);}}catch(e){}})();</script>
 <a class="skip-link screen-reader-text" id="wp-skip-link" href="#wp--skip-link--target">تخطى إلى المحتوى</a><div class="wp-site-blocks"><header class="wp-block-template-part">
 <div class="wp-block-group alignfull wc-blocks-pattern-header-essential wc-blocks-header-pattern is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-fa3bef35 wp-block-group-is-layout-flex" style="padding-top:40px;padding-right:40px;padding-bottom:40px;padding-left:40px">
