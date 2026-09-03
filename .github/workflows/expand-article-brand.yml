@@ -1,0 +1,89 @@
+name: Expand unified article brand bundle
+
+
+
+on:
+
+  workflow_dispatch:
+  
+  push:
+  
+    paths:
+    
+      - aura-articles-only.zip
+      
+
+
+permissions:
+
+  contents: write
+  
+
+
+jobs:
+
+  expand:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+      - name: Checkout
+      
+        uses: actions/checkout@v4
+        
+      - name: Expand article bundle
+      
+        shell: bash
+        
+        run: |
+        
+          set -euo pipefail
+          
+          test -f aura-articles-only.zip
+          
+          rm -rf /tmp/aura-articles
+          
+          mkdir -p /tmp/aura-articles
+          
+          unzip -q aura-articles-only.zip -d /tmp/aura-articles
+          
+          cp -a /tmp/aura-articles/. .
+          
+          rm -f aura-articles-only.zip .github/workflows/expand-article-brand.yml
+          
+          git config user.name "github-actions[bot]"
+          
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          git add -A
+          
+          git commit -m "Apply unified article brand shell"
+          
+          git push
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
