@@ -9,9 +9,11 @@ DOMAIN = 'https://www.auraideasuae.com'
 EXCLUDED_PREFIXES = (
     '/page/', '/author/', '/category/', '/tag/', '/payment/', '/form/',
     '/forminator/', '/admin-notice/', '/scan/', '/tools/', '/prev/',
-    '/pum/', '/rttpg/', '/privacy-policy/', '/سياسة-الخصوصية/',
-    '/الشروط-و-الأحكام/', '/شروط-وأحكام/', '/wp-',
+    '/pum/', '/rttpg/', '/privacy-policy/', '/wp-',
 )
+EXCLUDED_PATHS = {
+    '/سياسة-الخصوصية/', '/الشروط-و-الأحكام/', '/شروط-وأحكام/',
+}
 EXCLUDED_DIRS = {
     'page', 'author', 'category', 'tag', 'payment', 'form', 'forminator',
     'admin-notice', 'scan', 'tools', 'prev', 'pum', 'rttpg'
@@ -62,7 +64,8 @@ for url in locs:
     if parsed.netloc and parsed.netloc != 'www.auraideasuae.com':
         continue
     path_url = parsed.path or '/'
-    if path_url in seen or any(path_url.startswith(p) for p in EXCLUDED_PREFIXES):
+    decoded_path = unquote(path_url)
+    if path_url in seen or any(path_url.startswith(p) for p in EXCLUDED_PREFIXES) or decoded_path in EXCLUDED_PATHS:
         continue
     local = ROOT / unquote(path_url.lstrip('/')) / 'index.html' if path_url != '/' else ROOT / 'index.html'
     if not local.exists():
@@ -92,6 +95,6 @@ sitemap.write_text('\n'.join(urls) + '\n', encoding='utf-8')
 
 # Keep the index file as the single advertised sitemap.
 robots = ROOT / 'robots.txt'
-robots.write_text('User-agent: *\nAllow: /\nDisallow: /wp-admin/\nDisallow: /wp-login.php\nDisallow: /author/\nDisallow: /category/\nDisallow: /tag/\nDisallow: /page/\nDisallow: /payment/\nDisallow: /form/\nDisallow: /scan/\nSitemap: https://www.auraideasuae.com/sitemap.xml\n', encoding='utf-8')
+robots.write_text('User-agent: *\nAllow: /\nDisallow: /wp-admin/\nDisallow: /wp-login.php\nSitemap: https://www.auraideasuae.com/sitemap.xml\n', encoding='utf-8')
 print(f'archive pages updated with noindex: {changed}')
 print(f'sitemap URLs retained: {len(keep)}')

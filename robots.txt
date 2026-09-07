@@ -2,11 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /wp-admin/
 Disallow: /wp-login.php
-Disallow: /author/
-Disallow: /category/
-Disallow: /tag/
-Disallow: /page/
-Disallow: /payment/
-Disallow: /form/
-Disallow: /scan/
 Sitemap: https://www.auraideasuae.com/sitemap.xml
