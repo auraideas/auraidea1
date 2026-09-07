@@ -5,7 +5,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <link href="http://gmpg.org/xfn/11" rel="profile"/>
 <link href="/xmlrpc.php" rel="pingback"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
 <meta content="index,follow,max-image-preview:large" name="robots"/>
 <!-- تمت إضافة طبقة بيانات وضع موافقة وسم Google (gtag.js) بواسطة Site Kit -->
 <script id="google_gtagjs-js-consent-mode-data-layer">
@@ -478,6 +478,110 @@ html,body{max-width:100%;overflow-x:hidden}
   img,video,iframe{max-width:100%;height:auto}
 }
 </style>
+
+<style id="aura-responsive-final-fix">
+/* Aura Ideas responsive system: laptop, tablet/iPad, and phone */
+*,*::before,*::after{box-sizing:border-box}
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+img,svg,video,iframe{max-width:100%}
+.elementor,.elementor-page,.e-con,.e-con-inner,.elementor-element,.elementor-widget-container{min-width:0;max-width:100%}
+.e-con-inner{width:100%}
+.aura-header,.aura-topbar,.aura-clean-widget,#auraCleanSlider,.aura-services-section,.aura-ref,.aura-hero,.aura-workflow,.aura-stats,.aura-features-section,.aura-reviews,.aura-footer{max-width:100%}
+
+/* Laptop: keep generous spacing without allowing columns to become cramped. */
+@media (min-width:768px) and (max-width:1199px){
+  .aura-header-inner{width:calc(100% - 30px);gap:16px}
+  .aura-nav{gap:12px}
+  .aura-nav>a,.aura-services>summary{font-size:15px;padding-block:11px}
+  .aura-request{padding:11px 14px;font-size:14px}
+  #auraCleanSlider{height:clamp(430px,56vw,610px)}
+  .auraCleanText{right:6%;width:48%}
+  .auraCleanText h2{font-size:clamp(32px,4.2vw,50px)}
+  .aura-services-grid,.aura-features-grid{gap:18px}
+  .aura-ref-main{gap:30px;padding-inline:36px}
+  .aura-workflow{padding-inline:28px}
+  .aura-footer-main{grid-template-columns:1.2fr 1fr 1fr;gap:28px}
+}
+
+/* iPad/tablet portrait and narrow landscape. */
+@media (min-width:521px) and (max-width:767px){
+  .aura-topbar-inner{padding-inline:16px}
+  .aura-header-inner{width:100%;min-height:76px;padding:8px 16px}
+  #auraCleanSlider{height:auto;min-height:390px;aspect-ratio:16/10;max-height:none}
+  .auraCleanText{right:6%;width:88%;top:56%;text-align:center}
+  .auraCleanText h2{font-size:clamp(25px,5vw,38px)}
+  .auraCleanText p{font-size:14px}
+  .auraCleanActions{justify-content:center;flex-wrap:wrap}
+  .aura-services-section{padding-inline:18px}
+  .aura-service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  .aura-service-link{width:min(100%,210px)}
+  .aura-ref{padding-inline:12px}
+  .aura-ref-main{grid-template-columns:1fr;gap:0;padding:28px 22px 105px}
+  .aura-ref-art{order:1;min-height:220px}
+  .aura-ref-copy{order:2;text-align:center}
+  .aura-ref-copy h2,.aura-ref-copy p{margin-inline:auto}
+  .aura-ref-cards{grid-template-columns:repeat(2,1fr);margin-top:-72px}
+  .aura-workflow{padding:38px 18px}
+  .aura-workflow-panel{grid-template-columns:1fr}
+  .aura-stats-grid,.aura-reviews-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .aura-features-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* Phone: one-column content and touch-sized controls. */
+@media (max-width:520px){
+  body{font-size:14px}
+  .e-con-inner{padding-inline:0!important}
+  .aura-topbar-inner{min-height:40px;padding:5px 10px;gap:6px}
+  .aura-topbar-copy{min-width:0;overflow:hidden}
+  .aura-topbar-message,.aura-topbar-phone span{max-width:165px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .aura-topbar-social{gap:3px}
+  .aura-topbar-social a{width:26px;height:26px}
+  .aura-header-inner{width:100%!important;min-height:72px;padding:7px 10px;gap:8px}
+  .aura-logo{width:62px;height:56px}
+  .aura-request{font-size:12px;padding:9px 9px}
+  .aura-mobile>summary{width:42px;height:42px}
+  #auraCleanSlider{height:auto;min-height:320px;aspect-ratio:16/11;max-height:none}
+  .auraCleanBrand{top:10px;right:10px;gap:5px;padding:5px 7px}
+  .auraCleanBrand img{width:34px;height:34px}
+  .auraCleanBrand strong{font-size:11px}
+  .auraCleanText{right:3%;width:94%;top:58%;transform:translateY(-42%);text-align:center}
+  .auraCleanText>span{font-size:11px}
+  .auraCleanText h2{font-size:clamp(19px,6.3vw,26px);line-height:1.3}
+  .auraCleanText strong{font-size:11px;line-height:1.55}
+  .auraCleanText p{display:none}
+  .auraCleanActions{justify-content:center;gap:6px;margin-top:10px;flex-wrap:wrap}
+  .auraCleanActions a{min-height:35px;padding:7px 9px;font-size:10px}
+  .auraCleanButton{width:32px;height:32px;margin-top:-16px;font-size:23px}
+  .auraCleanPrev{right:6px}.auraCleanNext{left:6px}
+  .aura-services-section{padding:30px 10px 38px}
+  .aura-services-head h2{font-size:18px!important}
+  .aura-service-tabs{gap:5px;margin:18px auto 25px}
+  .aura-service-tab{padding:7px 9px;font-size:10px!important}
+  .aura-service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 7px}
+  .aura-service-link{width:100%;max-width:165px;padding:14px 8px}
+  .aura-ref{padding:8px 7px 0}
+  .aura-ref-main{grid-template-columns:1fr;padding:18px 12px 78px;border-radius:15px}
+  .aura-ref-art{min-height:155px}
+  .aura-ref-stack{transform:scale(.46) rotate(-4deg);margin:-52px 0}
+  .aura-ref-copy{text-align:center}
+  .aura-ref-copy h2{font-size:18px!important;line-height:1.55!important}
+  .aura-ref-copy p{font-size:11px!important;line-height:1.75!important}
+  .aura-ref-btn{width:100%}
+  .aura-ref-cards{grid-template-columns:repeat(2,1fr);gap:6px;margin-top:-50px}
+  .aura-ref-card{min-height:94px;padding:10px 4px 8px}
+  .aura-workflow,.aura-stats,.aura-reviews{width:calc(100% - 14px);margin-inline:7px;overflow:hidden}
+  .aura-workflow{padding:30px 10px}
+  .aura-workflow-nav{grid-template-columns:repeat(5,minmax(0,1fr));gap:2px}
+  .aura-workflow-step{font-size:10px}
+  .aura-workflow-panel{grid-template-columns:1fr;padding:17px 12px}
+  .aura-workflow-title{font-size:18px}
+  .aura-stats-grid,.aura-reviews-grid,.aura-features-grid{grid-template-columns:1fr}
+  .aura-features-section{padding-inline:12px}
+  .aura-footer-main{grid-template-columns:1fr;padding:34px 16px 25px}
+  .aura-footer-bottom{flex-direction:column;padding-inline:14px;text-align:center}
+}
+</style>
+
 </head>
 <body class="rtl home wp-singular page-template page-template-elementor_header_footer page page-id-852 wp-embed-responsive wp-theme-twentytwentyfour rttpg rttpg-7.9.3 radius-frontend rttpg-body-wrap rttpg-flaticon jps-theme-twentytwentyfour is-block-theme ehf-header ehf-footer ehf-template-twentytwentyfour ehf-stylesheet-twentytwentyfour manage-default esm-default elementor-default elementor-template-full-width elementor-kit-741 elementor-page elementor-page-852">
 <script id="jetpack-search-theme-token-sampler">(function(){try{var c=getComputedStyle(document.body),r=document.documentElement,ink=c.color,bg=c.backgroundColor;if(ink){r.style.setProperty('--jp-search-page-ink',ink);}if(bg&&bg!==ink&&bg!=='rgba(0, 0, 0, 0)'&&bg!=='transparent'){r.style.setProperty('--jp-search-page-surface',bg);}}catch(e){}})();</script> <style id="hfe-skip-link-style">
