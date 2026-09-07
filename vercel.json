@@ -6,16 +6,6 @@
       "permanent": false
     },
     {
-      "source": "/2025/12/28",
-      "destination": "/إعداد-الإطار-النظري/",
-      "permanent": true
-    },
-    {
-      "source": "/2025/12/28/",
-      "destination": "/إعداد-الإطار-النظري/",
-      "permanent": true
-    },
-    {
       "source": "/2026/02/07/عمل-بحوث-جامعية-الدليل-احترافية-للطلاب",
       "destination": "/البحوث-الجامعية-في-الإمارات/",
       "permanent": true
@@ -23,6 +13,26 @@
     {
       "source": "/2026/02/07/عمل-بحوث-جامعية-الدليل-احترافية-للطلاب/",
       "destination": "/البحوث-الجامعية-في-الإمارات/",
+      "permanent": true
+    },
+    {
+      "source": "/%D8%A5%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D8%B8%D8%B1%D9%8A/%D8%A3%D9%81%D8%B6%D9%84-%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A7%D8%AA/",
+      "destination": "/2025/12/28/%D8%A3%D9%81%D8%B6%D9%84-%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A7%D8%AA/",
+      "permanent": true
+    },
+    {
+      "source": "/%D8%A5%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D8%B8%D8%B1%D9%8A/%D8%A8%D8%AD%D9%88%D8%AB-%D8%B9%D9%84%D9%85%D9%8A%D8%A9/",
+      "destination": "/2025/12/28/%D8%A8%D8%AD%D9%88%D8%AB-%D8%B9%D9%84%D9%85%D9%8A%D8%A9/",
+      "permanent": true
+    },
+    {
+      "source": "/%D8%A5%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D8%B8%D8%B1%D9%8A/%D8%A3%D9%88%D8%B1%D8%A7-%D9%84%D9%84%D8%A3%D9%81%D9%83%D8%A7%D8%B1/",
+      "destination": "/2025/12/28/%D8%A3%D9%88%D8%B1%D8%A7-%D9%84%D9%84%D8%A3%D9%81%D9%83%D8%A7%D8%B1/",
+      "permanent": true
+    },
+    {
+      "source": "/%D8%A5%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D8%B8%D8%B1%D9%8A/%D8%A8%D8%B1%D9%88%D8%A8%D9%88%D8%B2%D8%A7%D9%84/",
+      "destination": "/2025/12/28/%D8%A8%D8%B1%D9%88%D8%A8%D9%88%D8%B2%D8%A7%D9%84/",
       "permanent": true
     }
   ]
