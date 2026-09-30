@@ -1,0 +1,192 @@
+.aura-service-seo-summary,
+.aura-service-seo-summary * {
+  box-sizing: border-box;
+}
+
+.aura-service-seo-summary {
+  margin: 24px 0;
+  padding: 24px;
+  border: 1px solid rgba(97, 206, 112, .55);
+  border-radius: 18px;
+  color: #f1f8fb;
+  background: linear-gradient(135deg, #0d2136 0%, #193f59 62%, #17486a 100%);
+  box-shadow: 0 16px 34px rgba(13, 33, 54, .16);
+  direction: rtl;
+  text-align: right;
+}
+
+.aura-service-seo-summary > p {
+  margin: 0 0 16px;
+  color: #e1eef4;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.aura-service-seo-features,
+.aura-service-seo-toc-grid,
+.aura-service-seo-related-grid {
+  display: grid;
+  gap: 12px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.aura-service-seo-features {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.aura-service-seo-features li {
+  margin: 0;
+  padding: 13px 14px;
+  border: 1px solid rgba(130, 214, 225, .24);
+  border-radius: 12px;
+  color: #f4fbfd;
+  background: rgba(9, 26, 43, .46);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.aura-service-seo-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.aura-service-seo-cta,
+.aura-service-seo-secondary {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border: 1px solid #61ce70;
+  border-radius: 999px;
+  color: #0d2136 !important;
+  background: #61ce70;
+  font-weight: 800;
+  line-height: 1.5;
+  text-decoration: none !important;
+}
+
+.aura-service-seo-secondary {
+  border-color: rgba(210, 238, 245, .45);
+  color: #eff9fc !important;
+  background: transparent;
+}
+
+.aura-service-seo-cta:hover,
+.aura-service-seo-cta:focus-visible {
+  border-color: #8be6f0;
+  background: #8be6f0;
+}
+
+.aura-service-seo-secondary:hover,
+.aura-service-seo-secondary:focus-visible {
+  border-color: #8be6f0;
+  color: #fff !important;
+  background: rgba(46, 112, 151, .46);
+}
+
+.aura-service-seo-toc {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(210, 238, 245, .18);
+}
+
+.aura-service-seo-toc h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 21px;
+}
+
+.aura-service-seo-toc-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.aura-service-seo-toc-grid a {
+  display: block;
+  height: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(130, 214, 225, .2);
+  border-radius: 11px;
+  color: #eaf8fb;
+  background: rgba(10, 28, 47, .5);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.65;
+  text-decoration: none;
+  transition: border-color .18s ease, background .18s ease, transform .18s ease;
+}
+
+.aura-service-seo-toc-grid a:hover,
+.aura-service-seo-toc-grid a:focus-visible {
+  border-color: #61ce70;
+  color: #fff;
+  background: rgba(46, 112, 151, .46);
+  transform: translateY(-1px);
+}
+
+.aura-service-seo-section {
+  margin: 24px 0;
+  padding: 22px 24px;
+  border: 1px solid #dcecef;
+  border-radius: 15px;
+  background: #fffdf9;
+  line-height: 1.9;
+}
+
+.aura-service-seo-section > :first-child {
+  margin-top: 0;
+}
+
+.aura-service-seo-section .note {
+  padding: 14px 16px;
+  border-right: 4px solid #61ce70;
+  border-radius: 8px;
+  color: #193f59;
+  background: #f1f8f2;
+}
+
+.aura-service-seo-related-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.aura-service-seo-related-grid a {
+  display: block;
+  height: 100%;
+  padding: 15px 16px;
+  border: 1px solid #dcecef;
+  border-radius: 12px;
+  color: #193f59;
+  background: #f7fbfc;
+  font-weight: 700;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+.aura-service-seo-related-grid a:hover,
+.aura-service-seo-related-grid a:focus-visible {
+  border-color: #2e7097;
+  color: #17486a;
+  background: #edf8ef;
+}
+
+@media (max-width: 760px) {
+  .aura-service-seo-summary {
+    padding: 19px;
+  }
+  .aura-service-seo-features,
+  .aura-service-seo-toc-grid,
+  .aura-service-seo-related-grid {
+    grid-template-columns: 1fr;
+  }
+  .aura-service-seo-summary > p {
+    font-size: 16px;
+  }
+  .aura-service-seo-section {
+    padding: 18px;
+  }
+}
